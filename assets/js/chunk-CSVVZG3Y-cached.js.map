@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../backend/dashboard/common/cdTimeUtils.js"],
+  "sourcesContent": ["'use strict'\n\nexport const MINS_MILLIS = 60000\nexport const HOURS_MILLIS = 60 * MINS_MILLIS\nexport const DAYS_MILLIS = 24 * HOURS_MILLIS\nexport const MONTHS_MILLIS = 30 * DAYS_MILLIS\n\nexport function humanDate (\n  date                        ,\n  options = { month: 'short', day: 'numeric' }\n) {\n  const locale = typeof navigator === 'undefined'\n    ? 'en-US'\n    : navigator.language\n\n  return new Date(date).toLocaleDateString(locale, options)\n}\n\nexport function addMonthToDate (date               , months        )       {\n  const now = new Date(date)\n  return new Date(now.setMonth(now.getMonth() + months))\n}\n\nexport function addTimeToDate (date               , timeMillis        )       {\n  const d = new Date(date)\n  d.setTime(d.getTime() + timeMillis)\n  return d\n}\n"],
+  "mappings": ";AAEO,IAAM,cAAc;AACpB,IAAM,eAAe,KAAK;AAC1B,IAAM,cAAc,KAAK;AACzB,IAAM,gBAAgB,KAAK;AAE3B,mBACL,MACA,UAAU,EAAE,OAAO,SAAS,KAAK,UAAU,GAC3C;AACA,QAAM,SAAS,OAAO,cAAc,cAChC,UACA,UAAU;AAEd,SAAO,IAAI,KAAK,IAAI,EAAE,mBAAmB,QAAQ,OAAO;AAC1D;AAOO,uBAAwB,MAAqB,YAA0B;AAC5E,QAAM,IAAI,IAAI,KAAK,IAAI;AACvB,IAAE,QAAQ,EAAE,QAAQ,IAAI,UAAU;AAClC,SAAO;AACT;",
+  "names": []
+}

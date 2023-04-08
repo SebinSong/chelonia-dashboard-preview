@@ -1,0 +1,1 @@
+function o(e,n={month:"short",day:"numeric"}){let t=typeof navigator>"u"?"en-US":navigator.language;return new Date(e).toLocaleDateString(t,n)}function a(e,n){let t=new Date(e);return t.setTime(t.getTime()+n),t}export{o as a,a as b};

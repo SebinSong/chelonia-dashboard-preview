@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../backend/dashboard/views/utils/events.js"],
-  "sourcesContent": ["'use stricts'\n\n// constants for UI related events\n\nexport const OPEN_MODAL = 'open-modal'\nexport const CLOSE_MODAL = 'close-modal'\nexport const REPLACE_MODAL = 'replace-modal'\n"],
-  "mappings": ";AAAA;AAIO,IAAM,aAAa;AACnB,IAAM,cAAc;AACpB,IAAM,gBAAgB;",
-  "names": []
-}
